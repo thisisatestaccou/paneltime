@@ -4,5 +4,5 @@ layout: widget
 event: Git & GitHub
 register: https://bit.ly/PanelTime
 join: https://google.meet
-date: Oct 20, 2021 00:48:00
+date: Oct 20, 2021 00:59:00
 ---
