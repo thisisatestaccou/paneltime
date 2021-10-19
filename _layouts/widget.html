@@ -96,7 +96,7 @@
         var timeToJoin = false;
         function redirect(timeToJoin)
         {
-            if (timeToJoin==false) 
+            if (timeToJoin == false) 
             {
                 document.getElementById("reg-join").href = "{{ page.register }}";
                 document.getElementById("reg-join").innerHTML = "Register Here";
@@ -107,7 +107,6 @@
                 document.getElementById("reg-join").innerHTML = "Join Here";
             }
         }
-        timeToJoin=true;
         redirect(timeToJoin);
     </script>
 </html>
