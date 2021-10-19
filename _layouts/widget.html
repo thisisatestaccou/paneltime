@@ -88,7 +88,7 @@
             <div></div>
             <div>minutes</div>
         </div>
-        <a id="reg-join" href="https://bit.ly/PanelTime">Register Here</a>
+        <a id="reg-join" href="{{ page.register }}">Register Here</a>
       {{ content }}
     </body>
     <script>
@@ -97,12 +97,12 @@
         {
             if (timeToJoin==false) 
             {
-                document.getElementById("reg-join").href = "https://bit.ly/PanelTime";
+                document.getElementById("reg-join").href = "{{ page.register }}";
                 document.getElementById("reg-join").innerHTML = "Register Here";
             } 
             else 
             {
-                document.getElementById("reg-join").href = "https://google.meet";
+                document.getElementById("reg-join").href = "{{ page.join }}";
                 document.getElementById("reg-join").innerHTML = "Join Here";
             }
         }
