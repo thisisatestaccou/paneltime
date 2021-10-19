@@ -1,3 +1,4 @@
 ---
 title: PanelTime
+layout: widget
 ---
