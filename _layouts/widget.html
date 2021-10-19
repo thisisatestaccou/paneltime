@@ -46,7 +46,7 @@
                 display: grid;
                 font-size: 2vw;
                 text-align: center;
-                grid-template-columns:10vw 0.5vw 10vw 0.5vw 10vw;
+                grid-template-columns:10vw 0.5vw 10vw 0.5vw 10vw 0.5vw 10vw;
                 max-width: 0.75rem;
                 margin: 0%;
                 padding: 1%;
@@ -80,6 +80,8 @@
             <div style="color: teal;" id="hours">0</div>
             <div>:</div>
             <div style="color: teal;" id="minutes">0</div>
+            <div>:</div>
+            <div style="color: teal;" id="seconds">0</div>
         </div>
         <div class="time-base">
             <div>days</div>
@@ -87,6 +89,8 @@
             <div>hours</div>
             <div></div>
             <div>minutes</div>
+            <div></div>
+            <div>seconds</div>
         </div>
         <br>
         <a id="reg-join" href="{{ page.register }}">Register Here</a>
@@ -115,9 +119,11 @@
             var days = Math.floor(distance / (1000 * 60 * 60 * 24));
             var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
             document.getElementById("days").innerHTML = days;
             document.getElementById("hours").innerHTML = hours;
             document.getElementById("minutes").innerHTML = minutes;
+            document.getElementById("seconds").innerHTML = seconds;
             if (distance < 0) {
                 clearInterval(x);
                 timeToJoin = true;
