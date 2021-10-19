@@ -51,19 +51,19 @@
                 margin: 0%;
                 padding: 1%;
             }
-            button{
+            a{
                 border: 0.1rem solid white;
                 border-radius: 50rem; 
                 color: white;
-                margin: 0.5rem;
+                margin: 1rem;
                 font-size: 2.5vw; 
-                padding: 0.5rem;
+                padding: 1rem;
                 background-color: black;
                 cursor: pointer;
                 transition: 350ms;
                 text-decoration: none;
             }
-            button:hover{
+            a:hover{
                 background-color: white;
                 color: black;
                 transition: 350ms;
@@ -88,7 +88,25 @@
             <div></div>
             <div>minutes</div>
         </div>
-        <button onclick="window.location.href = 'https://bit.ly/PanelTime'">Register Here</button>
+        <a id="reg-join" href="https://bit.ly/PanelTime">Register Here</a>
       {{ content }}
     </body>
+    <script>
+        var timeToJoin = false;
+        function redirect(timeToJoin)
+        {
+            if (timeToJoin==false) 
+            {
+                document.getElementById("reg-join").href = "https://bit.ly/PanelTime";
+                document.getElementById("reg-join").innerHTML = "Register Here";
+            } 
+            else 
+            {
+                document.getElementById("reg-join").href = "https://google.meet";
+                document.getElementById("reg-join").innerHTML = "Join Here";
+            }
+        }
+        timeToJoin=true;
+        redirect(timeToJoin);
+    </script>
 </html>
