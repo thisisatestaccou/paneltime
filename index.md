@@ -1,8 +1,8 @@
 ---
-title: PanelTime CyClave
+title: PanelTime
 layout: widget
-event: Cybersecurity Awareness Month Special
+event: Git & GitHub
 register: https://bit.ly/PanelTime
 join: https://google.meet
-date: Oct 30, 2021 18:00:00
+date: Nov 30, 2021 18:00:00
 ---
